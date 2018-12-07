@@ -14,11 +14,11 @@ public class DiceRunner{
 		}while((die1.getValue()!= 1)||(die2.getValue()!= 1));
 		System.out.println("Hey, look! You got snake eyes!\n\n");
 
-		Die die;
+		int r = 0;
 		DiceHolder holder = new DiceHolder();
 		for(int i = 0; i < 6; i++){
-			die = new Die((int)(Math.random()*20)+1);
-			holder.addDie(die);
+			r = (int)(Math.random()*17)+1;
+			holder.addDie(new Die(r));
 			System.out.println(holder);
 		}
 		holder.shake();

@@ -3,7 +3,7 @@ public class DiceHolder{
 	private ArrayList <Die> holder;
 	private Die die;
 	public DiceHolder(){
-		ArrayList <Die> holder = new ArrayList <> ();
+		holder = new ArrayList <> ();
 	}
 	public int addDie(Die die){
 		holder.add(die);
