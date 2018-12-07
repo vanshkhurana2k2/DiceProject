@@ -12,7 +12,7 @@ public class DiceRunner{
 			System.out.println(die1.toString());
 			System.out.println(die2.toString());
 		}while((die1.getValue()!= 1)||(die2.getValue()!= 1));
-		System.out.println("Hey, look! You got snake eyes!\n\n");
+		System.out.println("Hey, look! You got snake eyes!\n\n\n\n\n");
 
 		int r = 0;
 		DiceHolder holder = new DiceHolder();
