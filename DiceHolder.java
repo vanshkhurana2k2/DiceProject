@@ -14,8 +14,10 @@ public class DiceHolder{
 			return 1;
 	}
 	public void shake(){
+		Die temp;
 		for(int i = 0; i < holder.size(); i++){
-			(holder.get(i)).roll();
+			temp = holder.get(i);
+			temp.roll();
 		}
 	}
 	public String toString(){
