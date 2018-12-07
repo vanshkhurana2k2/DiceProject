@@ -1,3 +1,4 @@
+import java.lang.Math;
 public class DiceRunner{
 	public static void main(String[]args){
 		Die die1 = new Die();
@@ -13,6 +14,14 @@ public class DiceRunner{
 		}while((die1.getValue()!= 1)||(die2.getValue()!= 1));
 		System.out.println("Hey, look! You got snake eyes!\n\n");
 
-
+		Die die;
+		DiceHolder holder = new DiceHolder();
+		for(int i = 0; i < 6; i++){
+			die = new Die((int)(Math.random()*20)+1);
+			holder.addDie(die);
+			System.out.println(holder);
+		}
+		holder.shake();
+		System.out.println(holder);
 	}
 }
